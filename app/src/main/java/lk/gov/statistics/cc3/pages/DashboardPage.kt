@@ -5,6 +5,8 @@ package lk.gov.statistics.cc3.pages
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.size
+import androidx.compose.material.Button
+import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -12,6 +14,7 @@ import androidx.compose.ui.Modifier
 
 import androidx.compose.ui.graphics.Canvas
 import androidx.compose.ui.graphics.Color
+import androidx.navigation.NavHostController
 
 @Composable
 fun DashboardPage() {
@@ -19,7 +22,8 @@ fun DashboardPage() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        DisplayChart()
+
+        Text(text = "Dashboard")
     }
 }
 
@@ -41,8 +45,6 @@ fun DisplayChart() {
     val sweepAngles = proportions.map {
         360 * it / 100
     }
-
-
 
 
 }
