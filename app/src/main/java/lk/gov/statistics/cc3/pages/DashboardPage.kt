@@ -4,6 +4,7 @@ package lk.gov.statistics.cc3.pages
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.size
 import androidx.compose.material.Button
 import androidx.compose.material.Scaffold
@@ -14,16 +15,18 @@ import androidx.compose.ui.Modifier
 
 import androidx.compose.ui.graphics.Canvas
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
 
 @Composable
 fun DashboardPage() {
     Column(
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
+        modifier = Modifier.fillMaxSize()
     ) {
 
-        Text(text = "Dashboard")
+        Text(text = "Dashboard", fontSize = 25.sp)
     }
 }
 

@@ -54,7 +54,7 @@ fun LoginPage() {
             Spacer(modifier = Modifier.padding(10.dp))
 
             Button(
-                onClick = { /*TODO*/ },
+                onClick = {  },
                 ) {
                 Text(text = "Login")
             }
