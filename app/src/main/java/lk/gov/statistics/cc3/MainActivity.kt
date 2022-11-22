@@ -32,15 +32,15 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    //LoginPage()
-                    val navController = rememberNavController()
+                    LoginPage()
+                    /*val navController = rememberNavController()
                     //  NavigationMenu(navController)
                     //DashboardPage()
                     Scaffold(
                         bottomBar = { BottomBar(navController) }
                     ) {
                         NavigationGraph(navController)
-                    }
+                    }*/
                 }
             }
         }

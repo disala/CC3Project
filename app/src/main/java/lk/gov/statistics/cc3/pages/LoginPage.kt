@@ -14,6 +14,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.input.PasswordVisualTransformation
+import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import lk.gov.statistics.cc3.R
 
@@ -48,14 +50,14 @@ fun LoginPage() {
                 value = password.value,
                 onValueChange = { password.value = it },
                 label = { Text(text = "Password") },
-
-                )
+                visualTransformation = PasswordVisualTransformation()
+            )
 
             Spacer(modifier = Modifier.padding(10.dp))
 
             Button(
-                onClick = {  },
-                ) {
+                onClick = { },
+            ) {
                 Text(text = "Login")
             }
 
