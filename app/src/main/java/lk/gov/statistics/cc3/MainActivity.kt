@@ -8,6 +8,7 @@ import androidx.compose.material.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.Settings
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
@@ -71,7 +72,7 @@ fun BottomBar(navController: NavController) {
             //icon = { Icon(painterResource(id = item.icon), contentDescription = item.title) }
             //label = { Text(text = item.title,        //                fontSize = 9.sp) },
             icon = { Icon(imageVector = Icons.Default.Edit, contentDescription ="Selection" ) },
-            label = { Text(text = "Selection") },
+            label = { Text(text = "Survey") },
             selectedContentColor = Color.White,
             unselectedContentColor = Color.Yellow,
             alwaysShowLabel = true,
@@ -79,6 +80,17 @@ fun BottomBar(navController: NavController) {
             onClick = { navController.navigate("enumerationSelectionPage") }
         )
 
+        BottomNavigationItem(
+            //icon = { Icon(painterResource(id = item.icon), contentDescription = item.title) }
+            //label = { Text(text = item.title,        //                fontSize = 9.sp) },
+            icon = { Icon(imageVector = Icons.Default.Settings, contentDescription ="Operations" ) },
+            label = { Text(text = "Operations") },
+            selectedContentColor = Color.White,
+            unselectedContentColor = Color.Yellow,
+            alwaysShowLabel = true,
+            selected = false,
+            onClick = { navController.navigate("operationsMainPage") }
+        )
     }
 
 
